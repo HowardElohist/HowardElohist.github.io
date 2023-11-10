@@ -6,14 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style type="text/css">
-.image-container {
-    position: relative;
-    overflow: hidden;
+.enlarged {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
   }
 
-  .image-container:hover img {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-out;
+  /* Optional: Add a close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
   }
 </style>
 </head>
@@ -61,6 +64,7 @@
 
   <div class="w3-row-padding"><a>&nbsp;</a>
     <div class="w3-col l3 m6 w3-margin-bottom ">
+	     <div class="image-container" onclick="enlargeImage(this)">
       <img src="IUBA Hot Cocoa Social (5).png" alt="John" style="width:100%" height="">
       <h3>Hot Cocoa Social</h3>
       <p class="w3-opacity">S. Crystal &amp; B. Lawrence&nbsp;</p>
@@ -70,7 +74,8 @@
         </p>
    </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="371540327_674825921423681_239634260385195285_n.jpg" alt="Jane" style="width:100%" height="300">
+	     <div class="image-container" onclick="enlargeImage(this)">
+      <img src="371540327_674825921423681_239634260385195285_n.jpg" alt="Jane" style="width:100%" height="350">
       <h3>Litter Removal</h3>
       <p class="w3-opacity">ASEZ Community&nbsp;</p>
       <p>ASEZ seeks to take the lead in protecting the environment by launching campus cleanup campaigns.</p>
@@ -78,19 +83,12 @@
         <a href="https://docs.google.com/forms/d/1eeJGtgjqWtO0DCUF9azm28PQ9_S-E_4Ts4tvQ4zio2A/edit" class="w3-button w3-light-grey w3-block">RSVP</a></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
+	     <div class="image-container" onclick="enlargeImage(this)">
       <img src="Jerusalem Mother Flyer (3).png" alt="Mike" style="width:100%" height="275">
       <h3>Bible Seminar</h3>
       <p class="w3-opacity">S.Crystal &amp; B.Lawrence&nbsp;</p>
       <p>All creation was made by God's Will. So, we can understand God's Will by looking at all creation. What was God's Will in making Mothers give life?</p>
       <p><a href="https://docs.google.com/forms/d/1eeJGtgjqWtO0DCUF9azm28PQ9_S-E_4Ts4tvQ4zio2A/edit" class="w3-button w3-light-grey w3-block">RSVP</a></p>
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="" alt="N/A" style="width:100%">
-      <h3>N/A&nbsp;</h3>
-      <p class="w3-opacity">N/A&nbsp;</p>
-      <p>Coming Soon! Stay Tooned for more information!!!
-      &nbsp;</p>
-      <p><button class="w3-button w3-light-grey w3-block">N/A&nbsp;</button></p>
     </div>
   </div>
 	
